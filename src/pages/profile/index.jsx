@@ -1,8 +1,13 @@
+import { useContext } from "react";
+import { AuthContext } from "../../context";
 
 function Profile(){
+   const {user, handleLogout} = useContext(AuthContext);
     return (
         <div>
-            <h1>Profile Page</h1>
+            <h3>{user?.displayName}</h3>
+            <p>{user?.email}</p>
+            <button onClick={handleLogout}>Logout</button>
         </div>
     )
 }

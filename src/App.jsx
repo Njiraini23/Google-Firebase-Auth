@@ -3,7 +3,6 @@ import './App.css'
 import Register from './pages/register';
 import Login from './pages/login';
 import Profile from './pages/profile';
-
 import AuthPage from './pages/private-route';
 
 function App() {
